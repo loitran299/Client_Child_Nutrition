@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar {
+    height: 90px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+}
+
+.navbar .container {
+    margin: 0 31px;
+    padding: 0 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.navbar-brand span {
+    display: flex;
+    flex-direction: column;
+    font-size: 22;
+}
+.navbar-brand span small{
+    color: rgb(90 111 128);
+    display: block;
+    font-size: 10px;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-left: 4px;
+}
+.navbar-brand {
+    color: rgb(91 193 172);;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.shadow-lg {
+    box-shadow: rgba(0, 0, 0, 0.176) 0px 1rem 3rem !important;
+}
+
+
+
+
+.section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.section-padding .container{
+    width: 100%;
+    margin: auto;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+    justify-content: space-around;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.row-item {
+    margin-bottom: 1.5rem !important;
+    text-align: center;
+    min-height: 256px;
+    min-width: 350px;
+    transition: all 0.5s ease 0s;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.row-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.176) 0px 1rem 3rem;
+    background: rgb(255 255 255);
+}
+
+.row .title {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.d-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.featured-block-text {
+    color: rgb(91 193 172);
+    font-size: 24px;
+    margin-top: 20px;
+    transition: all 0.5s ease 0s;
+}

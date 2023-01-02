@@ -1,0 +1,67 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+.modal .overlay {
+    background-color: rgba(red, green, blue, alpha);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(6, 6, 6, 0.2);
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    align-items: center;
+}
+
+.content {
+    background-color: #ffffff;
+    z-index: 101;
+    border-radius: 2px;
+    width: fit-content;
+    min-width: 400px;
+
+}
+
+.response {
+    height: 400px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.modal .navbar {
+    padding: 0 0px 10px;
+    margin: 0;
+    width: 100%;
+}
+.modal .navbar button{
+    height: 30px;
+    width: fit-content;
+    padding: 0 10px;
+    margin-right: 20px;
+}
+
+.modal .head {
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+.modal .head img{
+    cursor: pointer;
+    
+}
+.modal .head img:hover{
+    filter: brightness(2);
+    
+}
+
+.modal .message {
+    font-size: 18px;
+}

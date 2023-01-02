@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form1.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form" id="form1">
+            <h3>Tư vấn theo thể trạng</h3>
+            <div class="row" id="gender">
+                <label for="Gender">Giới tính</label>
+                <input type="radio" name="Gender" value="0">Nam
+                <input type="radio" name="Gender" value="1">Nữ
+            </div>
+            <div class="row" id="Old">
+                <label for="">Tuổi</label>
+                <input type="number" name="Year" id="year">Năm
+                <input type="number" name="Month" id="month">Tháng
+            </div>
+            <div class="row">
+                <label for="">Chiều cao</label>
+                <input type="number" name="" placeholder="Cm" id="height">
+            </div>
+            <div class="row">
+                <label for="">Cân nặng</label>
+                <input type="number" name="" placeholder="Kg" id="weight">
+            </div>
+
+            <button type="submit" class="btn" id="btnSub">Submit</button>
+        </div>
+        <div class="navbar">
+            <a type="submit" href="index.html" class="btn btn-submit btn-back">Quay lại</a>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="overlay">
+                <div class="content">
+                    <div class="head">
+                        <img src="images/close.png" alt="" id="iconClose">
+                    </div>
+                    <div class="response" id="message">
+
+                    </div>
+                    <div class="navbar">
+                        <button type="submit" class="btn btn-back" id="btnClose">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/form1.js"></script>
+</html>

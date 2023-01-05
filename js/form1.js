@@ -50,7 +50,7 @@ class KichBan{
             old: parseInt(year)*12 + parseInt(month),
             weight: weight,
             height: height,
-            gender: gender
+            gender: parseInt(gender)
         }
     }
 
